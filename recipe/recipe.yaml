@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.7.0"
+  version: "0.9.0"
 
 package:
   name: querychat
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/q/querychat/querychat-${{ version }}.tar.gz
-  sha256: 503016d130cec20c9c5bb5562296fa324a5aeebf8062506e370bc3c994614c63
+  sha256: bffefcb76801bd6c231310644fb08de80d608c6f7ed92bd86c1a1995526946da
 
 build:
   number: 0
@@ -25,11 +25,12 @@ requirements:
   run:
     - python >=${{ python_min }}
     - python-duckdb
-    - shiny >=1.6.2
-    - shinychat >=0.6.0
+    - shiny >=1.7.0
+    - shinychat >=0.7.0
     - htmltools
-    - chatlas >=0.18.0
+    - chatlas >=0.23.0
     - narwhals >=2.2.0
+    - nbformat >=5.10.4
     - chevron
     - sqlalchemy >=2.0.0
     - great_tables >=0.16.0
